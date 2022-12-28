@@ -19,7 +19,7 @@ import {
 } from '@mui/material';
 import Avatar from '@mui/material';
 
-const Navbar = () => {
+const Navbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   const dispatch = useDispatch();
   const theme = useTheme();
   return (
@@ -27,7 +27,7 @@ const Navbar = () => {
       <Toolbar sx={{ justifyContent: 'space-between' }}>
         {/** left side*/}
         <FlexBetween>
-          <IconButton onClick={() => console.log('o/c sidebar')}>
+          <IconButton onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
             <MenuIcon />
           </IconButton>
           <FlexBetween
