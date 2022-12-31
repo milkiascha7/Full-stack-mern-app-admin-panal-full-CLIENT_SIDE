@@ -90,7 +90,7 @@ const Monthly = () => {
               reverse: false,
             }}
             yFormat=" >-.2f"
-            curve="step"
+            curve="basis"
             axisTop={null}
             axisRight={null}
             axisBottom={{
